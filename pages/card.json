@@ -1,0 +1,20 @@
+[
+    {
+        "title": "PACK 1",
+        "subtitle": "Cobertura completa",
+        "description": "INCLUYE:\n- Cobertura fotográfica y video resumen de la cena.\n- Cobertura fotográfica de acto de colación.\n- Book día libre.\n- Book y video de presentación de buzos.\n\nBONIFICACIÓN: 2 egresados no pagan si superan los 15 estudiantes.",
+        "price": "Consultar Precio"
+    },
+    {
+        "title": "PACK 2",
+        "subtitle": "Cobertura de 3 eventos",
+        "description": "INCLUYE:\n- 3 eventos elegidos por los estudiantes.\n\nBONIFICACIÓN: 1 egresado no paga si superan los 15 estudiantes.",
+        "price": "Consultar Precio"
+    },
+    {
+        "title": "PACK 3",
+        "subtitle": "Cobertura de 2 eventos",
+        "description": "INCLUYE:\n- 2 eventos elegidos por los estudiantes.",
+        "price": "Consultar Precio"
+    }
+]
