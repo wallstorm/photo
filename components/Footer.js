@@ -4,7 +4,7 @@ import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icon
 import { faEnvelopeSquare, faMobileAlt } from "@fortawesome/free-solid-svg-icons"
 
 const Footer = () => (
-    <div className="footer">
+    <div className="footerr">
         <div className="footer-content">
             <div className="footer-section about">
                 <h1 className="logo-text">photo<span>assistence</span></h1>
@@ -25,7 +25,7 @@ const Footer = () => (
                     <Link href="/about"><li>Nosotros</li></Link>
                     <Link href="/servicios"><li>Servicios</li></Link>
                     <Link href="/contacto"><li>Contacto</li></Link>
-                    <Link href="/terminosycondiones"><li>Términos y condiciones</li></Link>
+                    <Link href="/terms"><li>Términos y condiciones</li></Link>
                 </ul>
 
             </div>
@@ -44,14 +44,14 @@ const Footer = () => (
         </div>
         <style jsx>{`
         @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-                .footer {
+                .footerr {
                     position: relative;
                     width: 100%;
                     flex-shrink: 0;
                     font-family: 'Open Sans', sans-serif;
                 }
                 
-                .footer .footer-content {
+                .footerr .footer-content {
                     height: 320px;
                     background: #303036;
                     color: #d3d3d3;
@@ -59,27 +59,27 @@ const Footer = () => (
                     flex: 1 0 auto;
                 }
                 
-                .footer .footer-content .footer-section {
+                .footerr .footer-content .footer-section {
                     flex: 1px;
                     padding: 25px;
                 }
                 
-                .footer .footer-content h1,
-                .footer .footer-content h2 {
+                .footerr .footer-content h1,
+                .footerr .footer-content h2 {
                     color: white;
                 }
                 
-                .footer .footer-content .about h1 span {
+                .footerr .footer-content .about h1 span {
                     color: rgb(219, 7, 112);
                 }
                 
-                .footer .footer-content .about .contact span {
+                .footerr .footer-content .about .contact span {
                     display: block;
                     font-size: 1.1em;
                     margin-bottom: 8px;
                 }
                 
-                .footer .footer-content .about .socials a {
+                .footerr .footer-content .about .socials a {
                     border: 1px solid gray;
                     width: 45px;
                     height: 35px;
@@ -92,18 +92,18 @@ const Footer = () => (
                     transition: all .3s;
                 }
                 
-                .footer .footer-content .about .socials a:hover {
+                .footerr .footer-content .about .socials a:hover {
                     border: 1px solid white;
                     color: white;
                     transition: all .3s;
                 }
                 
-                .footer .footer-content .links h2,
-                .footer .footer-content .links ul{
+                .footerr .footer-content .links h2,
+                .footerr .footer-content .links ul{
                     margin-left: 50px;
                 }
                 
-                .footer .footer-content .links ul li {
+                .footerr .footer-content .links ul li {
                     margin-left: -10px;
                     text-decoration:none;
                     color: #d3d3d3;
@@ -113,13 +113,13 @@ const Footer = () => (
                     transition: all .3s;
                 }
                 
-                .footer .footer-content .links ul li:hover {
+                .footerr .footer-content .links ul li:hover {
                     color: white;
                     margin-left: 15px;
                     transition: all .3s;
                 }
                 
-                .footer .footer-content .contact-form .contact-input {
+                .footerr .footer-content .contact-form .contact-input {
                     background: #272727;
                     color: #bebdbd;
                     margin-bottom: 10px;
@@ -128,7 +128,7 @@ const Footer = () => (
                     border: none;
                 }
                 
-                .footer .footer-content .contact-form .contact-input:focus {
+                .footerr .footer-content .contact-form .contact-input:focus {
                     background: #1a1a1a;   
                 }
                 
@@ -144,7 +144,7 @@ const Footer = () => (
                     border: 1px solid rgb(82, 199, 253);
                 }
                 
-                .footer .footer-bottom {
+                .footerr .footer-bottom {
                     background: #343a40;
                     color: #a09999;
                     height: 50px;
@@ -156,12 +156,12 @@ const Footer = () => (
                     padding-top: 20px;
                 }
                 @media screen and (min-width: 320px) and (max-width: 520px){
-                    .footer {
+                    .footerr {
                         position: relative;
                         flex-shrink: 2;
                     }
                     
-                    .footer .footer-content {
+                    .footerr .footer-content {
                         height: 70em;
                         background: #303036;
                         color: #d3d3d3;
@@ -169,7 +169,7 @@ const Footer = () => (
                         flex: 0 0 auto;
                     }
                     
-                    .footer .footer-content .footer-section {
+                    .footerr .footer-content .footer-section {
                         flex: none;
                         padding: 25px;
                     }
@@ -187,8 +187,8 @@ const Footer = () => (
                         height:260px;
                         width:240px;
                     }
-                    .footer .footer-content .links h2,
-                    .footer .footer-content .links ul{
+                    .footerr .footer-content .links h2,
+                    .footerr .footer-content .links ul{
                         margin-left: 0px;
                     }
                     .contact-form {
@@ -200,12 +200,12 @@ const Footer = () => (
                     }
                 }
                 @media screen and (min-width: 520px) and (max-width: 684px) {
-                    .footer {
+                    .footerr {
                         position: relative;
                         flex-shrink: 2;
                     }
                     
-                    .footer .footer-content {
+                    .footerr .footer-content {
                         height: 40em;
                         background: #303036;
                         color: #d3d3d3;
@@ -213,7 +213,7 @@ const Footer = () => (
                         flex: 0 0 auto;
                     }
                     
-                    .footer .footer-content .footer-section {
+                    .footerr .footer-content .footer-section {
                         flex: none;
                         padding: 25px;
                     }
@@ -231,8 +231,8 @@ const Footer = () => (
                         height:260px;
                         width:240px;
                     }
-                    .footer .footer-content .links h2,
-                    .footer .footer-content .links ul{
+                    .footerr .footer-content .links h2,
+                    .footerr .footer-content .links ul{
                         margin-left: 0px;
                     }
                     .contact-form {
@@ -245,7 +245,7 @@ const Footer = () => (
                     
                 }
                 @media screen and (min-width: 685px) and (max-width: 1012px) {
-                    .footer .footer-content {
+                    .footerr .footer-content {
                         height: 31em;
                         background: #303036;
                         color: #d3d3d3;
@@ -256,12 +256,12 @@ const Footer = () => (
                 }
                 
                 @media screen and (width:360px){
-                    .footer {
+                    .footerr {
                         position: relative;
                         flex-shrink: 2;
                     }
                     
-                    .footer .footer-content {
+                    .footerr .footer-content {
                         height: 80em;
                         background: #303036;
                         color: #d3d3d3;
@@ -269,7 +269,7 @@ const Footer = () => (
                         flex: 0 0 auto;
                     }
                     
-                    .footer .footer-content .footer-section {
+                    .footerr .footer-content .footer-section {
                         flex: none;
                         padding: 25px;
                     }
@@ -286,8 +286,8 @@ const Footer = () => (
                         height:260px;
                         width:240px;
                     }
-                    .footer .footer-content .links h2,
-                    .footer .footer-content .links ul{
+                    .footerr .footer-content .links h2,
+                    .footerr .footer-content .links ul{
                         margin-left: 0px;
                     }
                     .contact-form {
@@ -303,12 +303,12 @@ const Footer = () => (
                     }
                 }
                 @media screen and (width:411px){
-                    .footer {
+                    .footerr {
                         position: relative;
                         flex-shrink: 2;
                     }
                     
-                    .footer .footer-content {
+                    .footerr .footer-content {
                         height: 80em;
                         background: #303036;
                         color: #d3d3d3;
@@ -316,7 +316,7 @@ const Footer = () => (
                         flex: 0 0 auto;
                     }
                     
-                    .footer .footer-content .footer-section {
+                    .footerr .footer-content .footer-section {
                         flex: none;
                         padding: 25px;
                     }
@@ -333,8 +333,8 @@ const Footer = () => (
                         height:260px;
                         width:240px;
                     }
-                    .footer .footer-content .links h2,
-                    .footer .footer-content .links ul{
+                    .footerr .footer-content .links h2,
+                    .footerr .footer-content .links ul{
                         margin-left: 0px;
                     }
                     .contact-form {
@@ -350,12 +350,12 @@ const Footer = () => (
                     }
                 }
                 @media screen and (width:320px){
-                    .footer {
+                    .footerr {
                         position: relative;
                         flex-shrink: 2;
                     }
                     
-                    .footer .footer-content {
+                    .footerr .footer-content {
                         height: 80em;
                         background: #303036;
                         color: #d3d3d3;
@@ -363,7 +363,7 @@ const Footer = () => (
                         flex: 0 0 auto;
                     }
                     
-                    .footer .footer-content .footer-section {
+                    .footerr .footer-content .footer-section {
                         flex: none;
                         padding: 25px;
                     }
@@ -380,8 +380,8 @@ const Footer = () => (
                         height:260px;
                         width:240px;
                     }
-                    .footer .footer-content .links h2,
-                    .footer .footer-content .links ul{
+                    .footerr .footer-content .links h2,
+                    .footerr .footer-content .links ul{
                         margin-left: 0px;
                     }
                     .contact-form {
@@ -397,12 +397,12 @@ const Footer = () => (
                     }
                 }
                 @media screen and (width:375px){
-                    .footer {
+                    .footerr {
                         position: relative;
                         flex-shrink: 2;
                     }
                     
-                    .footer .footer-content {
+                    .footerr .footer-content {
                         height: 80em;
                         background: #303036;
                         color: #d3d3d3;
@@ -410,7 +410,7 @@ const Footer = () => (
                         flex: 0 0 auto;
                     }
                     
-                    .footer .footer-content .footer-section {
+                    .footerr .footer-content .footer-section {
                         flex: none;
                         padding: 25px;
                     }
@@ -427,8 +427,8 @@ const Footer = () => (
                         height:260px;
                         width:240px;
                     }
-                    .footer .footer-content .links h2,
-                    .footer .footer-content .links ul{
+                    .footerr .footer-content .links h2,
+                    .footerr .footer-content .links ul{
                         margin-left: 0px;
                     }
                     .contact-form {
@@ -444,12 +444,12 @@ const Footer = () => (
                     }
                 }
                 @media screen and (width:414px){
-                    .footer {
+                    .footerr {
                         position: relative;
                         flex-shrink: 2;
                     }
                     
-                    .footer .footer-content {
+                    .footerr .footer-content {
                         height: 80em;
                         background: #303036;
                         color: #d3d3d3;
@@ -457,7 +457,7 @@ const Footer = () => (
                         flex: 0 0 auto;
                     }
                     
-                    .footer .footer-content .footer-section {
+                    .footerr .footer-content .footer-section {
                         flex: none;
                         padding: 25px;
                     }
@@ -474,8 +474,8 @@ const Footer = () => (
                         height:260px;
                         width:240px;
                     }
-                    .footer .footer-content .links h2,
-                    .footer .footer-content .links ul{
+                    .footerr .footer-content .links h2,
+                    .footerr .footer-content .links ul{
                         margin-left: 0px;
                     }
                     .contact-form {

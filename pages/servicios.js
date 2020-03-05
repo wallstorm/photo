@@ -1,11 +1,13 @@
-import Layout from "../components/MyLayout";
+import IndexPage from '../components/head';
 import Link from "next/link";
+import Layout from "../components/MyLayout";
+
 import Footer from "../components/Footer";
 
-import foto00 from './rojo.jpg';
-import foto03 from './space.jpg';
-import foto04 from './tesla.jpg';
-import foto05 from './cara.jpg';
+import foto00 from './img/rojo.jpg';
+import foto03 from './img/space.jpg';
+import foto04 from './img/tesla.jpg';
+import foto05 from './img/cara.jpg';
 
 const img = (id) => {
     if(id === "buzos") {
@@ -143,6 +145,7 @@ const PostLink = props => (
 export default function Servicios() {
     return (
         <div>
+            <IndexPage title="Servicios" />
             <Layout />
             <div className="main-servicio">
                 <h1>SERVICIOS</h1>
@@ -158,7 +161,7 @@ export default function Servicios() {
                 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
                 .main-servicio {
                     font-family: 'Open Sans', sans-serif;
-                    background: #C9FFDA;
+                    background: #4BBAC9;
                     
                 }
                 .row {
@@ -171,6 +174,7 @@ export default function Servicios() {
                 }
                 h1 {
                     text-align: center;
+                    color: white
                 }
                 @media screen and (width:360px){
                     .row {

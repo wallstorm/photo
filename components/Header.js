@@ -1,5 +1,5 @@
 import Link from "next/link";
-import img from "./logo";
+import img from "./images/logo01.png";
 
 const Header = () => (
     <div>
@@ -15,11 +15,18 @@ const Header = () => (
         <Link href="/">
             <a>Inicio</a>
         </Link>
-        <Link href="/">
-           {img()}
-        </Link>
+        <div className="logo-wall">
+            <Link href="/">
+                <img src={img} width="230px" alt="logo" />
+            </Link>
+        </div>
         
         <style jsx>{`
+            .logo-wall {
+                margin-left: 55px;
+                position: absolute;
+            }
+            
             a {
                 color: black;
                 text-decoration: none;
@@ -34,7 +41,22 @@ const Header = () => (
                 color:white;
                 transition: 0.5s;
             }
-
+            
+            @media screen and (min-width: 480px) and (max-width: 950px) {
+                .logo-wall {
+                    text-align:center;
+                    position: relative;
+                    top: -200px;
+                }
+            }
+            @media screen and (max-width: 480px) {
+                .logo-wall {
+                    text-align: center;
+                    position: relative;
+                    top:-200px;
+                    margin-left: 0;
+                }
+            }
             @media screen and (min-width: 320px) and (max-width: 950px) {
                 a {
                     position: relative;

@@ -1,4 +1,4 @@
-import img2 from './planeta.jpg';
+import img2 from './images/planeta.jpg';
 
 const Team = (props) => (
     <div>
@@ -14,13 +14,14 @@ const Team = (props) => (
             </div>
         </div>
         <style jsx>{`
-        
+        @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
         .card-wrapper {
             display: flex;
             align-items: center;
             align-content: center;
             flex-direction: column;
-            width: 350px
+            width: 350px;
+            font-family: 'Poppins', sans-serif;
         }
         .card {
             width: 17rem;

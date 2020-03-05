@@ -1,16 +1,32 @@
+import HeadTitle from "../components/head-title";
 import Layout from "../components/MyLayout";
 import Footer from "../components/Footer";
 import Team from "../components/cardTeam"
-import data from "./team.json";
-import dario from './dario.jpg';
-import lisa from './lisa.jpg';
+import Cuadro from "../components/aboutUS";
+
+import Perfil from "../components/perfil";
+
+import dataCuadro from "../data/cuadro.json";
+import data from "../data/team.json";
+
+import dario from './img/dario.jpg';
+import lisa from './img/lisa.jpg';
+
 
 export default function About() {
     const perfil = data[0];
     const perfil1 = data[1];
+
+    const cuadro = dataCuadro[0];
+
     return (
         <div>
+            <HeadTitle title="Nosotros" />
             <Layout />
+            <Cuadro
+                title={cuadro.title}
+                text={cuadro.text}
+            />
             <h1 className="heading">Nuestro Equipo</h1>
             <div className="team">
                 <Team
@@ -26,8 +42,10 @@ export default function About() {
                     description={perfil1.description}
                 />
             </div>
+            <Perfil />
             <Footer />
             <style jsx>{`
+                @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
                 .heading {
                     text-transform: uppercase;
                     font-size: 3.5rem;
@@ -37,7 +55,8 @@ export default function About() {
                     text-align: center;
                     color: #333;
                     position: relative;
-                    margin-top: 40px
+                    margin-top: 40px;
+                    font-family: 'Poppins', sans-serif;
                 }
                 .heading:after {
                     content: "";

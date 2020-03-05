@@ -1,12 +1,11 @@
-import img from './camara.png';
+import img1 from './images/camere.jpg';
 import Link from "next/link";
 
 const Card = (props) => (
     <div>
-
-        <div className="container">
-            <div className="imgBx" data-before-content={props.title}>
-                <img src={img} />
+        <div className="containerr" style={{border: props.estilo.border, boxShadow: props.estilo.box}}>
+            <div className="imgBx" data-before-content={props.title} style={{border: props.estilo1}}>
+                <img src={img1} />
             </div>
             <div className="details">
                 <div className="content">
@@ -17,13 +16,12 @@ const Card = (props) => (
                     <div className="btn"><Link href="/contacto"><button>Contáctanos Ahora</button></Link></div>
                 </div>
             </div>
-
         </div>
-
+        
         <style jsx>{`
             @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
             
-            .container {
+            .containerr {
                 position: relative;
                 display: flex;
                 flex-wrap: wrap;
@@ -34,9 +32,7 @@ const Card = (props) => (
                 margin:0px auto;
                 margin-bottom: 30px;
                 font-family: 'Poppins', sans-serif;
-                border: 1px solid #006dbc;
                 border-radius: 0px 15px 15px 0px;
-                box-shadow: 10px 0px 1px #006dbc;
             }
             
             .imgBx {
@@ -46,14 +42,18 @@ const Card = (props) => (
                 align-items: center;
                 width: 50%;
                 height: 100%;
-                border: 5px solid #006dbc;
                 box-sizing: border-box;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-end;
             }
-
-            .container .imgBx:before {
+            .imgBx img {
+                width: 100%;
+            }
+            .containerr .imgBx:before {
                 content: attr(data-before-content);
                 position: absolute;
-                top: 20px;
+                top: 70px;
                 left: 20px;
                 color: #000;
                 opacity: 0.2;
@@ -61,7 +61,7 @@ const Card = (props) => (
                 font-weight: 800;
                 align-content: center
             }
-            .container .details {
+            .containerr .details {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -70,14 +70,14 @@ const Card = (props) => (
                 box-sizing: border-box;
                 padding: 40px
             }
-            .container .details h2 {
+            .containerr .details h2 {
                 margin: 0;
                 padding: 0;
                 font-size: 2.5em;
                 line-height: 0.8em;
                 color: #444;
             }
-            .container .details h2 span {
+            .containerr .details h2 span {
                 font-size: 0.4em;
                 text-transform: uppercase;
                 letter-spacing: 1px;
@@ -87,7 +87,7 @@ const Card = (props) => (
                 text-decoration: underline;
                 cursor: pointer
             }
-            .container .details p {
+            .containerr .details p {
                 max-width: 85%;
                 margin-left: 15%;
                 color: #333;
@@ -96,14 +96,14 @@ const Card = (props) => (
                 white-space: -moz-pre-wrap;
                 white-space: -o-pre-wrap;
             }
-            .container .details h3 {
+            .containerr .details h3 {
                 margin: 0;
                 padding: 0;
                 font-size: 2em;
                 color: #a2a2a2;
                 text-align: center;
             }
-            .container .details button {
+            .containerr .details button {
                 background: #006dbc;
                 color: #fff;
                 border: none;
@@ -124,37 +124,33 @@ const Card = (props) => (
                 margin-top: 2px;
             }
             @media (max-width: 1080px) {
-                .container {
+                .containerr {
                     height: auto;
                     width: auto;
                 }
-                .container .imgBx {
-                    padding: 40px;
-                    box-sizing: border-box;
-                    width: 100% !important;
-                    height: auto;
-                    text-align: center;
-                    overflow: hidden;
-                    border-right: 0px;
+                .containerr .imgBx {
+                    width: auto;
                 }
-                .container .imgBx img {
+                .containerr .imgBx:before {
+                    position: absolute;
+                    top: 120px;
+                }
+                .containerr .imgBx img {
                     left: initial;
-                    max-width: 100%;
-                    
                 }
                 .details {
                     width: 100% !important;
                     height: auto;
                     padding: 20px
                 }
-                .container .details p {
+                .containerr .details p {
                     max-width: 100%;
                     margin-left: 0;
                 }
-                .container .details h3 {
+                .containerr .details h3 {
                     font-size: 1.5em;
                 }
-                .container .imgBx:before {
+                .containerr .imgBx:before {
                     margin:0px;
                     font-size: 5em;
                     width: 100%;
